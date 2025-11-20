@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: white;
+    font-family: Arial sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    margin-top: 40px;
+    padding: 40px;
+    background: lightgray;
+}
+
+.main {
+    position: relative;
+}
+
+.search_box {
+    position: relative;
+    margin: 30px auto;
+}
+
+label {
+    display: none;
+}
+
+#search {
+    min-width: 100%;
+    font-size: 28px;
+    padding: 20px 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.autocomplete {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #dcdcdc;
+    border: 2px solid black;
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 22;
+}
+
+.autocomplete li {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    background: #dcdcdc;
+}
+
+.autocomplete li:hover {
+    background: #8cd3ff;
+}
+
+.repo_list {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.repo-item {
+    background: darkorange;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.del_btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.del_btn:hover {
+    opacity: 0.8;
+}
