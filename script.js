@@ -66,7 +66,7 @@ function addRepoToList(repo) {
       Owner: ${repo.owner.login}<br>
       Stars: ${repo.stargazers_count}
     </div>
-    <button class="del_btn">X</button>
+    <a href="#" class="del_btn">X</a>
   `;
 
     li.querySelector(".del_btn").addEventListener("click", () => li.remove());
